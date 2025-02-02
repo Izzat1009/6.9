@@ -81,15 +81,15 @@ const Hero = () => {
         <div className='flex p-5 gap-3 flex-wrap'>
             {
                 data?.map((item)=> (
-                    <div key={item.id} className='fixed top-0 left-0 w-full h-screen bg-[#0005]'>
-                        <div className='modal__desk  fixed top-[50%] left-[50%] w-[450px] min-h-[600px] translate-x-[-50%] translate-y-[-50%]'>
+                    <div key={item.id} className=''>
+                        <div className='card '>
                         <h1 className='Text'>{item.fname}</h1>
                         <h1 className='Text2'>{item.lname}</h1>
                          <h1 className='Number'>{item.age}</h1>
                          <h2 className='Profession'>{item.profession}</h2>
                          <h1 className='Gender'>{item.gender}</h1>
                          <p className='bio'>{item.bio}</p>
-                        <button onClick={() => handledelete(item.id)} className='button2'>Close</button>
+                        <button onClick={() => handledelete(item.id)} className='button2'>Delete</button>
                     </div>
                     </div>
                 ))
